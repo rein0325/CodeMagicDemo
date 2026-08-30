@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell(Get-ChildItem \"C:\\\\Program Files\\\\nodejs\" -ErrorAction SilentlyContinue; Get-ChildItem \"$env:APPDATA\\\\npm\" -ErrorAction SilentlyContinue; Get-ChildItem \"$env:LOCALAPPDATA\\\\Programs\" -ErrorAction SilentlyContinue | Where-Object { $_.Name -match \"node\" }; where.exe node 2>$null)",
+      "PowerShell(winget --version)",
+      "PowerShell(winget install --id OpenJS.NodeJS.LTS -e --accept-package-agreements --accept-source-agreements)",
+      "Bash(ls \"/c/Program Files/nodejs/\" 2>&1)",
+      "Bash(ls -la \"/c/Users/a0970/Downloads/\" 2>&1 | grep -i \"code\")",
+      "Bash(npx tsc *)",
+      "PowerShell(npx tsc --noEmit)",
+      "PowerShell(Get-Command node -ErrorAction SilentlyContinue; Get-ChildItem \"C:\\\\Program Files\\\\nodejs\" -ErrorAction SilentlyContinue; Get-ChildItem \"$env:APPDATA\\\\nvm\" -ErrorAction SilentlyContinue; $env:PATH -split ';' | Select-String -Pattern \"node\")",
+      "PowerShell(Set-Location \"D:\\\\有夢最美\\\\code\"; $env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; npx tsc --noEmit)",
+      "PowerShell(Set-Location \"D:\\\\有夢最美\\\\code\"; $env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; npm run build)",
+      "PowerShell(Set-Location \"D:\\\\有夢最美\\\\code\"; $env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; npx tsc --noEmit; if \\($?\\) { Write-Output \"TYPECHECK_OK\" }; npm run build)",
+      "Bash(ls -la \"/d/有夢最美/美術圖\" 2>&1)"
+    ]
+  }
+}
