@@ -3,5 +3,5 @@ import { defineConfig } from "vite";
 export default defineConfig({
   root: ".",
   base: "./",
-  build: { target: "es2020" },
+  build: { target: "es2020", outDir: "docs" },
 });
